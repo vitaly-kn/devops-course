@@ -1,0 +1,9 @@
+services:
+  app:
+    image: node:latest
+    command: sh -c "yarn install && npm run start"
+    ports:
+      - 127.0.0.1:3000:3000
+    working_dir: /app
+    volumes:
+      - ./:/app
