@@ -1,7 +1,6 @@
 services:
   app:
-    image: node:latest
-    command: sh -c "yarn install && npm run start"
+    image: vitalykn/nestjs_rest_api_a
     ports:
       - 127.0.0.1:3000:3000
     working_dir: /app
